@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hierarquia de Títulos</title>
+</head>
+<body>
+    <!-- Níveis de título, vai de h1 até h6-->
+    <h1> Entendendo HTML</h1>
+    <h2> Principais formatações</h2>
+        <p>Nesta frase temos um <b>termo em negrito</b> usando a tab b</p>
+        <p>Nesta frase, tenho um <strong>termo em destaque</strong> usando a tag STRONG</p>
+    <h2> Itálico / Ênfase</h2>
+        <p> Nesta frase, temo um termo em <i>termo em itálico</i> usando a tag i (não semântica)</p>
+        <p>Nesta frase, temo um termo em <em>termo em ênfase</em> usando a tag EM (Semântica)</p>
+    <h2> Texto Marcado</h2>
+        <p>Podemos criar também <mark>um texto marcado</mark>usando a tag MARK    </p>
+        <p>Podemos criar também <mark style="background-color: aqua;">um texto marcado</mark>usando a tag MARK   usando CSS sytle </p>
+    <h2> Texto Grande</h2>
+        <p>Estamos criando um <big>texto grande</big> e <small>um texto pequeno</small>  </p> <!-- ver que a tag Big já está ficando obsoleto-->
+    <h2> Texto Deletado</h2>
+        <p>Podemos marcar <del>um texto como excluído</del> para indicar que ele deve ser lido, mas não considerado</p>
+    <h2> Texto inserido </h2>
+        <p>Podemos marcar <ins>um texto como inserido</ins>, para dar um ênfase e indicar qu ele foi adicionado depois 
+        <p>Existe também o <u>sublinhado</u> com a tag IU (Não semântica)</p>
+   
+    <h2>Texto Sobrescrito</h2>
+    <p>Para inserir coisas do tipo x<sup>20</sup>+3</p>
+    <h2> Texto subscrito</h2>
+    <p>Para inserir coisas do tipo H<sub>2</sub>O</p>
+    <h1> Sobre nível 1</h1>
+    <h2> Sobre nível 2</h2>
+    <h3> Sobre nível 3</h3>
+    <h4> Sobre nível 4</h4>
+    <h5> Sobre nível 5</h5>
+    <h6> Sobre nível 6</h6>
+    
+<hr> <!-- para criar um alinha horizontal -->
+
+    <h1>Parágrafos e quebras de linha</h1>
+<hr> <!-- para criar um alinha horizontal -->
+<p>My first paragraph.</p>
+    
+<hr> <!-- para criar um alinha horizontal -->
+<p> se precisar quebrar o texto em algum lugar específico <br> como este, pode usar a tab &lt;br&gt;</p><!-- &lt less then &gt greater then -->
+<p> Emojis</p>
+&#x1f596;
+&#x1f913;
+
+<hr> <!-- para criar um alinha horizontal -->
+<!-- https://unsplash.com/pt-br - site para pesquisar imagens  -->
+<!-- https://gimp.org - manipulação imagens  -->
+<h2> Código-fonte</h2>
+<p>o Comando <code>document.getElementById('Teste')</code> é escrito em linguagem javascript</p>
+    <Pre><!-- Usado o Pre e o Code para melhor visualização de codigos fontes, a formatação fica melhor -->
+        <code>
+            num = int(input('Digite um número'))            
+            if num % == 0;
+                printf(f'ONumero {num} é PAR)
+            else:
+                printf(f'ONumero {num} é IMPAR)
+            printf('Fim do programa')
+        </code>
+    </Pre>
+
+    <h2> Citações</h2>
+    <p>Como diria o pai de um amigo: <q>o computador é um burro muito rápido</q></p>
+    <h2>Citações Completas </h2>
+    <p>Segundo  Frank Herbert no livro Duna :</p>
+    <blockquote>
+        O poder de destruir algo , é o poder absoluto sobre ela
+    </blockquote>
+
+    <h2>>Abreviações</h2>
+    <p>Estou estaudando <abbr title="HyperText Markup Language"> HTML </abbr> e <abbr title="Cascading style Sheets"> CSS </abbr></p>
+
+
+    <h2>>Texto Invertido</h2>
+    <p> <bdo dir="rtl"> EStou aprendendo HTML</bdo></p>
+</body>
+</html>

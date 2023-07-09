@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens Dinâmicas</title>
+</head>
+<body>
+    <h1>Mídias em HTML5</h1>
+    <h2>Imagens Dinâmicas</h2>
+    <p></p>
+        <picture><!-- Comandos para imagens dinâmicas da página -->
+            <source media="(max-width: 750px)" srcset="Imagens_dinamicas/Foto_P.png"
+            type="image/png">
+            <source media="(max-width: 1050px)" srcset="Imagens_dinamicas/Foto_M.png"
+            type="image/png">
+            <img src="Imagens_dinamicas/Foto_G.png" alt="Imagem Flexível">
+        </picture>
+        <h1>Reproduzido Áudio</h1> <!-- Comandos para adicionar audio na página -->
+        <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+        <audio preload="none"  controls >
+                <!--src="midias/Enough - NEFFEX.mp3" controls autoplay>   FUNCIONA - auto play  ESTE LINK pode colocar LOOP para ficar rodando a musica em loop-->
+            <!-- <source src="midias/Enough - NEFFEX.mp3" type="audio/mpeg">-->
+            <source src="midias/guanacast-33.mp3" type="audio/mpeg">
+        </audio>
+        <hr>
+        <audio preload="none"  controls >
+           <source src="midias/Enough - NEFFEX.mp3" type="audio/mpeg">
+        </audio>
+    <hr>
+    <p>Se infelizmente seu navegador não consegue reproduzir áudio.
+        <a href="midias/Enough - NEFFEX.mp3">Clique aqui para baixar o arquivo MP3 - music</a> ou <p></p>
+        <a href="midias/guanacast-33.mp3">Clique aqui para baixar o arquivo MP3 - Poccast</a>
+
+</body>
+</html>

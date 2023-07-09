@@ -1,0 +1,77 @@
+@charset "UTF-8";
+
+
+@font-face{
+  font-family: 'BebasNeue-Regular';
+  src: url('fontes/BebasNeue-Regular.ttf') format('truetype');
+}
+
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(138, 196, 138);
+    margin: 0px;
+   }
+
+   header{
+    font-family:  "/fontes/BebasNeue-Regular";
+    font-weight: bold;
+    font-size: 20px;
+    background-image: linear-gradient( to bottom, rgb(4, 167, 72), rgb(9, 131, 9) );
+    padding: 10px;
+    margin:0px;
+    height: 160px;
+    
+    
+         }
+
+  header > h1{
+    color:white;
+    text-align: center;
+    text-shadow: black 0.1em 0.1em 0.2em/* Sobra texto*/
+    
+    
+    
+  }
+ 
+
+  header > p{
+        text-indent: 30px;/* Paragrafo */
+        color:rgb(98, 247, 123);
+        text-align: center;
+        text-shadow: black 0.1em 0.1em 0.2em/* Sobra texto*/
+    }
+
+    
+  nav{
+    padding: 3px;
+    margin-right: 50px;
+    
+  }
+
+  nav > a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    margin-right: 30px;
+}
+
+  main{
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 20px;/* deixa a borda arredondada */
+    box-shadow: 5px 3px 7px 1px black;/* sobra do box */
+
+  }
+  
+
+  footer{
+      background-color: black;
+      color: white;
+      text-align: center;
+      padding: 1px;
+      margin: 0px;
+  }
+
+ 

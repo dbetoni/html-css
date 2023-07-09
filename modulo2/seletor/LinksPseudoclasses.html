@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Classes2</title>
+   <style>
+    /*
+    Seletores personalizados
+    #  = id 
+    .  = class
+    :  = pseudo-class
+    :: = pseudo-element
+    >  = children
+    */
+
+    a{
+        color:red;
+        text-decoration: none;
+        font-weight: bold;    
+    }
+
+    a:visited{
+        color: blue;
+    }
+    a:hover{
+        color: black;
+        text-decoration: underline;
+    }
+    
+    a:active{
+        color:yellow;
+    }
+
+    .especial::before{
+        content: '⇒';
+        text-decoration: none;
+        font-weight: normal;
+        color:darkgray
+
+    }
+    .especial::after{  /* que são elemenos que não existem e estou criando eles aqui no CSS , por isso usa ::  
+        sempre utilizar content , quando usar before e after , 
+        usado para inserir alguma coisa por exemplo em um botão */
+        content: '⇐';
+        text-decoration: none;
+        font-weight: normal;
+        color:darkgray
+        }
+   </style>
+</head>
+<body>
+    
+    	
+<h1>Personalizando links</h1>
+<ul>
+    <li><a href="http://www.betoni.com.br" target="_blank" class="especial">Site Pessoal</a></li>
+    <li><a href="http://youtube.com/DB3T0N1" target="_blank">Canal do youtube</a></li>
+    <li><a href="http://www.betoni.com.br/dbetoni/first.html" target="_blank">Site de testes</a></li>
+</ul>
+      
+
+ </body>
+</html>
+</body>
+</html>

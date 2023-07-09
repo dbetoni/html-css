@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grouping Tags</title>
+  <style>
+      body{
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: dimgray;
+        margin: 0px;
+       }
+
+       header{
+        background-color: white;
+        padding: 10px;
+        margin:10px;
+             }
+
+      nav{
+        background-color: rgb(102,102,102);
+        padding: 3px;
+        box-shadow: 5px 3px 7px 1px black;/* sobra do box */
+      }
+
+      h1{
+        text-shadow: black 0.1em 0.1em 0.2em/* Sobra texto*/
+      }
+
+      p{
+            text-indent: 30px;/* Paragrafo */
+        }
+
+      nav > a{
+          text-decoration: none;
+          color: white;
+          font-weight: bold;
+          margin-right: 30px;
+      }
+
+      nav > a:hover {
+        text-decoration: underline;
+      }
+
+      main{
+        background-color: white;
+        padding: 10px;
+        margin: 10px;
+        border-radius: 20px;/* deixa a borda arredondada */
+        box-shadow: 5px 3px 7px 1px black;/* sobra do box */
+
+      }
+      
+      article{
+        background-color: lightgray;
+        padding: 5px;
+      }
+
+      article > aside {
+        background-color: rgb(165, 165,165);
+        font-weight: bold;
+      }
+
+      footer{
+          background-color: black;
+          color: white;
+          text-align: center;
+          padding: 1px;
+          margin: 0px;
+      }
+
+      #assuntos{
+          background-color: rgb(178, 204, 204);
+      }
+
+      div#bola{ /* usa o radius para fazer uma Bola  */
+        height: 100px;
+        width: 100px;
+        margin: 10px;
+        background-color: white;
+        border-radius: 50%;
+      }
+  </style>
+</head>
+<body>
+    <Header>
+      <h1>Meu Site</h1>
+      <nav>
+          <a href="#">Link</a>
+          <a href="#">Link</a>
+          <a href="#">Link</a>
+          <a href="#">Link</a>
+      </nav>
+    </Header>
+    <main>
+        <section id="assuntos">TESTE</section>
+          <p>Esportes Política Tecnologia</p>
+        <section id="noticias">
+            <article>
+                <h2>Notícia sobre o Brasil </h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                   Nostrum nam, ab a pariatur eos dolorum porro numquam fugiat unde quaerat 
+                   corporis perspiciatis assumenda dicta exercitationem optio sint? Reiciendis, est nam?</p>
+                <aside>
+                    <p>Artigo escrito por bla bla bla</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        Desenvolvido para teste
+    </footer>
+<div id="bola"></div>
+</body>
+</html>

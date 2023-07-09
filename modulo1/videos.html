@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulando Videos</title>
+</head>
+<body>
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <p> Este video está hospedado no meu próprio servior</p>
+       <!-- handbrake - software para manipular videos - converter videos  --> 
+    <video width="560" poster="imagens/limoes-capa.png" controls>
+        <source src="videos/meu-video.mp4" type="video/mp4">
+        <source src="videos/meu-video.m4v" type="video/mp4">
+        <source src="videos/meu-video.mebm" type="video/webm">
+        <source src="videos/meu-video.ogv" type="video/ogg">
+       
+        <p>Seu navegador não tem tem compatibilidade com reprodução de videos</p>
+    </video>
+    
+    <h1>Inserindo vídeos do youtube</h1>
+    <iframe width="560" height="480" src="https://www.youtube.com/embed/VtvjbmoDx-I" title="1984 Apple&#39;s Macintosh Commercial (HD)" frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+ <!-- Video do youtube, quando pausado aparece links para outros videos, dependendo do cliente ele pode indicar o video de um concorrente
+porém é gratis e a qualidade de audio é pior que o do Vimeo  
+
+Em video do Vimeo, geramente é pago, quando pausado não aparece propaganda e a qualidade melhor
+]Levar isso em consideração dependendo do clinete, pq se for video curto, armazenado no servidor local o consumo da banda de internet pode não interferir, mas quando 
+são muitos videos e videos pesados, talvez uma solução seja utilizar os links externos como estes do youtube ou vimeo, pois o consumo da banda é feita nos servidores destas empresas
+e não no servidor local do cliente --> 
+    <h1>Inserindo vídeos do Vimeo</h1>
+
+    <iframe src="https://player.vimeo.com/video/6733914?h=2c13a69bed" width="560" height="480" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+
+</body>
+</html>

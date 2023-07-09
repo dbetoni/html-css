@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Classes2</title>
+   <style>
+        body{
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+
+        }
+        /* Exemplo de como fazer um Menu interativo 
+        Pseudo Class, definem ESTADOS de elementos dentro do HTML*/
+        div >p {
+            display: none;
+        }
+        
+
+        div:hover > p {
+                    display: block;
+                    color: white;
+                    background-color: red;
+                    width: 300px;
+
+                }
+                
+        div:hover {
+                    color: red;
+                }
+
+   </style>
+</head>
+<body>
+  
+
+    <p>Exemplo de Hover</p>
+    <p>Passe o mouse sobre o texto abaixo</p>
+    <div class="textoescondido">Passe o mouse aqui
+        <p>Texto Escondido...</p> 
+    </div>
+    <p>Fim do Exemplo</p>
+      
+
+ </body>
+</html>
+</body>
+</html>

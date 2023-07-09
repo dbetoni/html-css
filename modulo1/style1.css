@@ -1,0 +1,34 @@
+@charset "UTF-8";
+*  {/*Configurações globais das CSS*/
+    font-family: Arial, Helvetica, sans-serif;
+}
+p{
+    text-align: justify;
+}
+
+body {
+    
+    background-image: linear-gradient(to bottom, white, blue);
+    background-attachment: fixed;
+}
+
+
+main {
+    background-color: white;
+    width: 600px;
+    border: 15px;
+    box-shadow: 10px 10px 10px black;
+    padding: 10px; /* é como se fosse a margem ta pagina, da um espaço pro texto não ficar grudado na inicio fim de onde está  */
+    margin: auto; /* centraliza o Main, e se diminuir ou aumentar a tela, vai acompanhando  */
+    
+}
+
+h1{
+    color: green;
+    text-align: center;
+    text-shadow: 1px 1px 2px black;
+}
+
+h2{
+    color: orange;
+}

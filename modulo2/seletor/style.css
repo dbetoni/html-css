@@ -1,0 +1,60 @@
+@charset "UTF-8";
+/*
+    em HTML é id    = em CSS é #
+    em HTML é class = em CSS é .
+    Id: Um único por página, identificado no CSS como ‘#’;
+    Classes: Pode ser utilizado múltiplas vezes na página, identificado no CSS como ‘.’;
+
+    !DOCTYPE html>
+<html>
+<head>
+    <title>Como usar id ou class</title>
+<body>    
+    <div id="slider">
+        <img src="imagem.jpg">
+    </div>
+    <ul>
+        <li class="item">Item 1</li>
+        <li class="item">Item 2</li>
+        <li class="item">Item 3</li>
+        <li class="item">Item 4</li>
+        <li class="item">Item 5</li>
+    </ul>
+</body>
+</html>
+*/
+body{
+    background-color: #d6fde9;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    color: #1e402f
+}
+h1#principal{
+    text-align: center;
+    background-color: green;
+    color: white
+}
+
+h2{
+    color: #3c805e
+}
+
+.basico{
+    color: #3c805e
+
+}
+
+.intermediario{
+    color: #80793c
+
+}
+
+.avancado{
+    color: #803c3c
+}
+
+.destaque{
+    background-color: yellow;
+}
