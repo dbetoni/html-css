@@ -3,56 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=], initial-scale=1.0">
-    <title>Posição dos Fundos</title>
+    <title>Teste imagem de Fundo</title>
 
     <style>
 
-       main{
-       align-items: center;
+       body{
+        height: 100vh;
+        background-color: black;
+        background-image: url(imagens/wallpaper002.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;  /* faz com que a imagem de fundo ocupe a tela toda, vai perdendo as margens da imagem, mas vai adaptando a imagem para ocupar 100% desta view */
        }
-        
-        div.bloco{
-            background-image: url(imagens/wallpaper002.jpg);
-            height: 200px;
-            border: 1px solid black;
-            border-radius: 20px;
-            margin: 10px auto 10px auto;
-            width: 1100px;
-            
-            
-            
-        }
-        div#q1{
-            background-position: center top;
-            
 
-        }
-        div#q2{
-            background-position: center 25% ;
-
-        }
-        div#q3{
-            background-position: center center;
-
-        }
-        div#q4{
-            background-position: center 75%;
-        }
-        div#q5{
-            background-position: center bottom;
-        }
+       main{
+        background-color: white;
+        width: 400px;
+        padding: 10px;
+        margin:auto;
+        border: 1px solid darkblue;
+        border-radius: 15px;
+        text-align: justify;
+       }
 
     </style>
 </head>
 <body>
     <main>
-            <div class="bloco" id="q1"></div>
-            <div class="bloco" id="q2"></div>
-            <div class="bloco" id="q3"></div>
-            <div class="bloco" id="q4"></div>
-            <div class="bloco" id="q5"></div>
+        <h1>Teste de Imagem de Fundo</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+            Tenetur qui pariatur vero, consequatur alias sapiente numquam. Iusto ex inventore quas, 
+            repellendus eius, et qui, nobis nam magnam repellat enim. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            A ratione illum officiis inventore aspernatur molestias tempora laudantium blanditiis sequi amet,
+             omnis voluptas eligendi libero eos dolorem exercitationem voluptates consequuntur asperiores! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda, 
+            non hic voluptas sunt nobis nulla dolore perspiciatis fugiat ullam ut eaque debitis accusantium nostrum reiciendis enim inventore consequuntur recusandae voluptate.</eum></p>
     </main>
-    
     
 </body>
 </html>
