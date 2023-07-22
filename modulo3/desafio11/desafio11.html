@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=], initial-scale=1.0">
+    <title>Alinhamento Vertical</title>
+
+    <style>
+
+          
+        #container{
+            
+            background: black url(imagens/espaco.jpg) center center no-repeat fixed;
+            background-size: cover;   
+         
+            
+            position: relative; /* isso é importante no exercio, Para centralizar a outra foto que vai sobrepor */
+            height: 96vh;
+            padding: 10px;
+           
+                     }
+        
+       #conteudo{
+                background-image: url(imagens/astronauta.png);
+                visibility:visible;
+                background-size: 100% 100%;
+
+                position: absolute;/* isso é importante no exercio, Para centralizar a outra foto que vai sobrepor */
+
+                height: 300px;
+                width: 500px;
+                 /* neste caso estamos centralizando , tanto verticalmente quanto horizontalmente a imagem sobreposta com a imagem abaixo*/
+               left: 50%;
+               top: 50%;
+
+               transform: translate(-50%, -50%);
+
+            }
+         h4{
+            color: yellow;
+            text-align: center;
+         }
+    </style>
+</head>
+<body>
+
+   <section id="container">
+      <article id="conteudo">
+         <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+            Beatae ad eos est voluptas commodi excepturi, 
+            ratione placeat necessitatibus facilis odio tempore illo natus molestiae esse repudiandae molestias vel atque corporis. </h4>
+
+      </article>
+  </section>
+
+</body>
+</html>
