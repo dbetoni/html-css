@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            }
+
+        h1{
+           text-align: center;
+        }
+
+        main{ /* Alinhar - centralizar  */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        table{
+            width: 500px;
+            border-collapse: collapse; /* isso faz com que não fique separado as celulas da tabela */
+            align-items: center;
+            position: relative; /* é usado quando queremos alterar 
+                            a posição de um elemento tendo como referência a posição inicial dele. Ao aplicarmos essa propriedade em um elemento, ele não muda de posição, 
+                                pois já vai estar posicionado em sua posição de referência. EXEMPLO, quando aplicamos top: 50px, e left: 
+                            50px no elemento, como no exemplo abaixo, sua posição se altera 50 pixels de cima para baixo, 
+                            e da esquerda para direita tendo como referência a sua posição inicia*/
+                       
+                   }
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+            
+        }
+        td, th, caption{
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        thead, tfoot{
+            background-color: gray;
+            color: white
+        }
+
+        thead > tr >  th { /* Este efeito é legal, o cabeçalho da tabela não some ao rolar a barra. */
+                position: sticky;
+                top: -1px;
+                background-color: gray;
+        }
+        
+         /* tbody > tr:nth-child(odd)
+         tbody > tr:nth-child(even) , par e impar, */
+        tbody > tr:nth-child(2n){   /* isso faz com o efeito zebrado, usando a pseudoclasse, e pula de 2 em 2 linhas - OBSERVE QUE ESTA somente na TR */
+            background-color: lightgray;
+        }
+
+        td.num{
+            text-align: right;
+        }
+
+        p{
+            padding: 10px;
+            text-align: justify;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Uso de Tabelas Grandes</h1>
+    
+        <!-- 
+            Anatoma para tabelas Grandes
+            TABLE = tabela
+            CAPTION 
+                THEAD 
+                    td, TD, TH
+                TBODY
+                    td, TD, TH
+                TFOOT
+                    td, TD, TH
+                
+
+                    th - titulos
+                    td - dados 
+        -->
+        <main>
+        <table class="table1">
+            <caption>População das Unidades Federativas</caption>
+            <thead>
+                <tr> 
+                    <th scope="col">Estado</th>  <!-- Scope , Coluna ou ROW,  é usado para mecanismos de busca, tipo google, pra identificar o padrão da tabela-->
+                    <th scope="col" style="width: 100px;">População</th> <!-- Style aqui determina o tamanho da coluna, se a tabela ta com 500px, e neste caso só a coluna ta com 100px-->
+                 
+                </tr>
+            </thead>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>São Paulo</td>
+                    <td class="num">44 420 459</td>
+                </tr>
+                <tr>
+                    <td>Minas Gerais</td>
+                    <td class="num"> 20 538 718</td>
+                </tr>
+                <tr>
+                    <td>Rio de Janeiro</td>
+                    <td class="num">16 054 524</td>
+                </tr>
+                <tr>
+                    <td>Bahia</td>
+                    <td class="num">14 136 417</td>
+                </tr>
+                <tr>
+                    <td>Paraná</td>
+                    <td class="num">11 443 208</td>
+                </tr>
+                <tr>
+                    <td>Rio Grande do Sul</td>
+                    <td class="num">10 880 506</td>
+                </tr>
+                <tr>
+                    <td>Pernambuco</td>
+                    <td class="num">9 058 155</td>
+                </tr>
+                <tr>
+                    <td>Ceará</td>
+                    <td class="num">8 791 688</td>
+                </tr>
+                <tr>
+                    <td>Pará</td>
+                    <td class="num">8 116 132</td>
+                </tr>
+                <tr>
+                    <td>Santa Catarina</td>
+                    <td class="num">7 609 601</td>
+                </tr>
+                <tr>
+                    <td>Goiás</td>
+                    <td class="num">7 055 228</td>
+                </tr>
+                <tr>
+                    <td>Maranhão</td>
+                    <td class="num">6 775 152</td>
+                </tr>
+                <tr>
+                    <td>Paraíba</td>
+                    <td class="num">3 974 495</td>
+                </tr>
+                <tr>
+                    <td>Amazonas</td>
+                    <td class="num">3 941 175</td>
+                </tr>
+                <tr>
+                    <td>Espírito Santo</td>
+                    <td class="num">3 833 486</td>
+                </tr>
+                <tr>
+                    <td>Mato Grosso</td>
+                    <td class="num">3 658 813</td>
+                </tr>
+                <tr>
+                    <td>Rio Grande do Norte</td>
+                    <td class="num">3 302 406</td>
+                </tr>
+                <tr>
+                    <td>Piauí</td>
+                    <td class="num">3 269 200</td>
+                </tr>
+                <tr>
+                    <td>Alagoas</td>
+                    <td class="num">3 127 511</td>
+                </tr>
+                <tr>
+                    <td>Distrito Federal</td>
+                    <td class="num">2 817 068</td>
+                </tr>
+                <tr>
+                    <td>Mato Grosso do Sul</td>
+                    <td class="num">2 756 700</td>
+                </tr>
+                <tr>
+                    <td>Sergipe</td>
+                    <td class="num">2 209 558</td>
+                </tr>
+                <tr>
+                    <td>Rondônia</td>
+                    <td class="num">1 581 016</td>
+                </tr>
+                <tr>
+                    <td>Tocantins</td>
+                    <td class="num">1 511 459</td>
+                </tr>
+                <tr>
+                    <td>Acre</td>
+                    <td class="num">830 026</td>
+                </tr>
+                <tr>
+                    <td>Amapá</td>
+                    <td class="num">733 508</td>
+                </tr>
+                <tr>
+                    <td>Roraima</td>
+                    <td class="num">636 303</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th scope="row">Total de habitantes</th>
+                    <th scope="row">203 062 512
+                    </th>
+                </tr>
+            </tfoot>
+        </table>
+    </main>
+
+<p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, totam. Hic sint quidem omnis ipsum quisquam error, nobis veniam voluptatem ad facere voluptate laboriosam recusandae saepe debitis alias minus dolores!
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam voluptatibus mollitia quam totam, velit atque architecto a illo quis dolore, dolorem ullam adipisci eum dicta necessitatibus illum, excepturi porro modi?
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo reprehenderit illo facilis exercitationem saepe. Numquam et porro in quo sequi itaque officiis reiciendis quibusdam, blanditiis, necessitatibus tenetur similique voluptates asperiores!
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae nisi itaque alias provident vero ullam vitae consequatur. Quaerat, architecto at perferendis fugiat, esse dolorum soluta deleniti dicta fugit, facere itaque.
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis, corporis! Tempore dicta minima, rerum accusamus magni quasi cum qui libero neque nam nihil ipsum? Accusamus odio repudiandae voluptate ipsam reprehenderit!
+
+</p>
+<p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, totam. Hic sint quidem omnis ipsum quisquam error, nobis veniam voluptatem ad facere voluptate laboriosam recusandae saepe debitis alias minus dolores!
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam voluptatibus mollitia quam totam, velit atque architecto a illo quis dolore, dolorem ullam adipisci eum dicta necessitatibus illum, excepturi porro modi?
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo reprehenderit illo facilis exercitationem saepe. Numquam et porro in quo sequi itaque officiis reiciendis quibusdam, blanditiis, necessitatibus tenetur similique voluptates asperiores!
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae nisi itaque alias provident vero ullam vitae consequatur. Quaerat, architecto at perferendis fugiat, esse dolorum soluta deleniti dicta fugit, facere itaque.
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis, corporis! Tempore dicta minima, rerum accusamus magni quasi cum qui libero neque nam nihil ipsum? Accusamus odio repudiandae voluptate ipsam reprehenderit!
+    
+</p>
+<p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, totam. Hic sint quidem omnis ipsum quisquam error, nobis veniam voluptatem ad facere voluptate laboriosam recusandae saepe debitis alias minus dolores!
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam voluptatibus mollitia quam totam, velit atque architecto a illo quis dolore, dolorem ullam adipisci eum dicta necessitatibus illum, excepturi porro modi?
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo reprehenderit illo facilis exercitationem saepe. Numquam et porro in quo sequi itaque officiis reiciendis quibusdam, blanditiis, necessitatibus tenetur similique voluptates asperiores!
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae nisi itaque alias provident vero ullam vitae consequatur. Quaerat, architecto at perferendis fugiat, esse dolorum soluta deleniti dicta fugit, facere itaque.
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis, corporis! Tempore dicta minima, rerum accusamus magni quasi cum qui libero neque nam nihil ipsum? Accusamus odio repudiandae voluptate ipsam reprehenderit!
+    
+</p>
+<p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, totam. Hic sint quidem omnis ipsum quisquam error, nobis veniam voluptatem ad facere voluptate laboriosam recusandae saepe debitis alias minus dolores!
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam voluptatibus mollitia quam totam, velit atque architecto a illo quis dolore, dolorem ullam adipisci eum dicta necessitatibus illum, excepturi porro modi?
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo reprehenderit illo facilis exercitationem saepe. Numquam et porro in quo sequi itaque officiis reiciendis quibusdam, blanditiis, necessitatibus tenetur similique voluptates asperiores!
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae nisi itaque alias provident vero ullam vitae consequatur. Quaerat, architecto at perferendis fugiat, esse dolorum soluta deleniti dicta fugit, facere itaque.
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis, corporis! Tempore dicta minima, rerum accusamus magni quasi cum qui libero neque nam nihil ipsum? Accusamus odio repudiandae voluptate ipsam reprehenderit!
+    
+</p>
+<p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, totam. Hic sint quidem omnis ipsum quisquam error, nobis veniam voluptatem ad facere voluptate laboriosam recusandae saepe debitis alias minus dolores!
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam voluptatibus mollitia quam totam, velit atque architecto a illo quis dolore, dolorem ullam adipisci eum dicta necessitatibus illum, excepturi porro modi?
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo reprehenderit illo facilis exercitationem saepe. Numquam et porro in quo sequi itaque officiis reiciendis quibusdam, blanditiis, necessitatibus tenetur similique voluptates asperiores!
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae nisi itaque alias provident vero ullam vitae consequatur. Quaerat, architecto at perferendis fugiat, esse dolorum soluta deleniti dicta fugit, facere itaque.
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis, corporis! Tempore dicta minima, rerum accusamus magni quasi cum qui libero neque nam nihil ipsum? Accusamus odio repudiandae voluptate ipsam reprehenderit!
+    
+</p>
+<p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, totam. Hic sint quidem omnis ipsum quisquam error, nobis veniam voluptatem ad facere voluptate laboriosam recusandae saepe debitis alias minus dolores!
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam voluptatibus mollitia quam totam, velit atque architecto a illo quis dolore, dolorem ullam adipisci eum dicta necessitatibus illum, excepturi porro modi?
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo reprehenderit illo facilis exercitationem saepe. Numquam et porro in quo sequi itaque officiis reiciendis quibusdam, blanditiis, necessitatibus tenetur similique voluptates asperiores!
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae nisi itaque alias provident vero ullam vitae consequatur. Quaerat, architecto at perferendis fugiat, esse dolorum soluta deleniti dicta fugit, facere itaque.
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis, corporis! Tempore dicta minima, rerum accusamus magni quasi cum qui libero neque nam nihil ipsum? Accusamus odio repudiandae voluptate ipsam reprehenderit!
+    
+</p>
+<p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, totam. Hic sint quidem omnis ipsum quisquam error, nobis veniam voluptatem ad facere voluptate laboriosam recusandae saepe debitis alias minus dolores!
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam voluptatibus mollitia quam totam, velit atque architecto a illo quis dolore, dolorem ullam adipisci eum dicta necessitatibus illum, excepturi porro modi?
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo reprehenderit illo facilis exercitationem saepe. Numquam et porro in quo sequi itaque officiis reiciendis quibusdam, blanditiis, necessitatibus tenetur similique voluptates asperiores!
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae nisi itaque alias provident vero ullam vitae consequatur. Quaerat, architecto at perferendis fugiat, esse dolorum soluta deleniti dicta fugit, facere itaque.
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis, corporis! Tempore dicta minima, rerum accusamus magni quasi cum qui libero neque nam nihil ipsum? Accusamus odio repudiandae voluptate ipsam reprehenderit!
+    
+</p>
+<p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, totam. Hic sint quidem omnis ipsum quisquam error, nobis veniam voluptatem ad facere voluptate laboriosam recusandae saepe debitis alias minus dolores!
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam voluptatibus mollitia quam totam, velit atque architecto a illo quis dolore, dolorem ullam adipisci eum dicta necessitatibus illum, excepturi porro modi?
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo reprehenderit illo facilis exercitationem saepe. Numquam et porro in quo sequi itaque officiis reiciendis quibusdam, blanditiis, necessitatibus tenetur similique voluptates asperiores!
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae nisi itaque alias provident vero ullam vitae consequatur. Quaerat, architecto at perferendis fugiat, esse dolorum soluta deleniti dicta fugit, facere itaque.
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis, corporis! Tempore dicta minima, rerum accusamus magni quasi cum qui libero neque nam nihil ipsum? Accusamus odio repudiandae voluptate ipsam reprehenderit!
+    
+</p>
+<p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, totam. Hic sint quidem omnis ipsum quisquam error, nobis veniam voluptatem ad facere voluptate laboriosam recusandae saepe debitis alias minus dolores!
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam voluptatibus mollitia quam totam, velit atque architecto a illo quis dolore, dolorem ullam adipisci eum dicta necessitatibus illum, excepturi porro modi?
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo reprehenderit illo facilis exercitationem saepe. Numquam et porro in quo sequi itaque officiis reiciendis quibusdam, blanditiis, necessitatibus tenetur similique voluptates asperiores!
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae nisi itaque alias provident vero ullam vitae consequatur. Quaerat, architecto at perferendis fugiat, esse dolorum soluta deleniti dicta fugit, facere itaque.
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis, corporis! Tempore dicta minima, rerum accusamus magni quasi cum qui libero neque nam nihil ipsum? Accusamus odio repudiandae voluptate ipsam reprehenderit!
+    
+</p>
+<p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, totam. Hic sint quidem omnis ipsum quisquam error, nobis veniam voluptatem ad facere voluptate laboriosam recusandae saepe debitis alias minus dolores!
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam voluptatibus mollitia quam totam, velit atque architecto a illo quis dolore, dolorem ullam adipisci eum dicta necessitatibus illum, excepturi porro modi?
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo reprehenderit illo facilis exercitationem saepe. Numquam et porro in quo sequi itaque officiis reiciendis quibusdam, blanditiis, necessitatibus tenetur similique voluptates asperiores!
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae nisi itaque alias provident vero ullam vitae consequatur. Quaerat, architecto at perferendis fugiat, esse dolorum soluta deleniti dicta fugit, facere itaque.
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis, corporis! Tempore dicta minima, rerum accusamus magni quasi cum qui libero neque nam nihil ipsum? Accusamus odio repudiandae voluptate ipsam reprehenderit!
+    
+</p>
+<p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, totam. Hic sint quidem omnis ipsum quisquam error, nobis veniam voluptatem ad facere voluptate laboriosam recusandae saepe debitis alias minus dolores!
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam voluptatibus mollitia quam totam, velit atque architecto a illo quis dolore, dolorem ullam adipisci eum dicta necessitatibus illum, excepturi porro modi?
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo reprehenderit illo facilis exercitationem saepe. Numquam et porro in quo sequi itaque officiis reiciendis quibusdam, blanditiis, necessitatibus tenetur similique voluptates asperiores!
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae nisi itaque alias provident vero ullam vitae consequatur. Quaerat, architecto at perferendis fugiat, esse dolorum soluta deleniti dicta fugit, facere itaque.
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis, corporis! Tempore dicta minima, rerum accusamus magni quasi cum qui libero neque nam nihil ipsum? Accusamus odio repudiandae voluptate ipsam reprehenderit!
+    
+</p>
+</body>
+</html>
