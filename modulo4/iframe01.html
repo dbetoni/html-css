@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudos de iframes</title>
+    <style>
+        iframe{
+            width: 400px;
+            height: 400px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Tamanho padrão iframe 300x150  mas se tiver css, o css é soberano, e vai usar o que está configurado no css-->
+    <h1> Testando o uso de um iframe</h1>
+    <p>
+        Acessando o site do <a href="https://www.cursoemvideo.com" target="_blank">Curso em Video</a> para aprender a programar 
+    </p>
+
+    <p>
+        Acessando o site do <iframe src="https://www.cursoemvideo.com" frameborder="0"></iframe> para aprender a programar 
+    </p>
+
+    <p>Em alguns sites, o iframe não funciona corretamente <iframe src="https://www.google.com.br">
+        <a href="https://www.google.com.br" target="_blank"></a>
+    </iframe> O site do google é um deles, alguns sites têm estas restrições(proteções)</p>
+
+    <p>
+        Acessando o site do <iframe src="http://betoni.com.br/" frameborder="0">
+                            <a href="http://betoni.com.br/" target="_blank">site Betoni</a>
+        </iframe> para o meu site pessoal.
+    </p>
+</body>
+</html>

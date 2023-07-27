@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudos de iframes</title>
+    <style>
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+        iframe#tela{
+            width: 95vw;
+            height: 400px;
+            border: 2px solid black;
+           
+        }
+        h1{
+            text-align: center;
+        }
+        p{
+            padding: 10px;
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+    <h1>Faça uma escolha</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, ratione labore doloribus ex minus ad numquam eius asperiores nesciunt, repellat similique ab omnis assumenda amet deleniti error! Eveniet, est vel.
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis, fugiat neque id perspiciatis saepe esse, harum omnis beatae, ad totam consequatur quibusdam ducimus quam nam. Quasi eveniet voluptatem ab iusto! 
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum dolores delectus velit vel quos magnam est? Minima nisi, assumenda ex, vel accusantium fuga et iure obcaecati voluptates quis sunt nihil. 
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime, dignissimos ratione cupiditate fuga possimus repellat ipsam. Earum quidem, omnis exercitationem enim ab, doloribus eveniet quasi magnam iste recusandae cupiditate voluptate!
+    </p>
+
+        <ul>
+            <li><a href="pag001.html" target="frame">Primeira página</a></li> <!-- usa o target="frame" ai abre a pagina no iframe e não em outra janela do navegador-->
+            <li><a href="pag002.html" target="frame">Segunda página</a></li>
+            <li><a href="pag003.html" target="frame">Terceira página</a></li>
+        </ul>
+    
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, ratione labore doloribus ex minus ad numquam eius asperiores nesciunt, repellat similique ab omnis assumenda amet deleniti error! Eveniet, est vel.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis, fugiat neque id perspiciatis saepe esse, harum omnis beatae, ad totam consequatur quibusdam ducimus quam nam. Quasi eveniet voluptatem ab iusto! 
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum dolores delectus velit vel quos magnam est? Minima nisi, assumenda ex, vel accusantium fuga et iure obcaecati voluptates quis sunt nihil. 
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime, dignissimos ratione cupiditate fuga possimus repellat ipsam. Earum quidem, omnis exercitationem enim ab, doloribus eveniet quasi magnam iste recusandae cupiditate voluptate!
+        </p>
+
+        <!--<iframe id="tela"  name="frame" src=""> o uso do name , será usado no link das paginas, vai referenciar o nome que ta aqui -->
+            <iframe id="tela"  name="frame" srcdoc="<h1>Esolha uma das opções acima</h1> <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod assumenda sapiente accusamus perspiciatis quos. 
+                Recusandae maiores doloremque dolore neque eius ab, natus explicabo veniam impedit ipsum aspernatur repudiandae illo maxime.</p>
+            <p><img src='imagens/GaloVolpi.png'</p>"
+                        <p>Infelizmente seu navegador não é compatível com isso!</p>
+        </iframe>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, ratione labore doloribus ex minus ad numquam eius asperiores nesciunt, repellat similique ab omnis assumenda amet deleniti error! Eveniet, est vel.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis, fugiat neque id perspiciatis saepe esse, harum omnis beatae, ad totam consequatur quibusdam ducimus quam nam. Quasi eveniet voluptatem ab iusto! 
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum dolores delectus velit vel quos magnam est? Minima nisi, assumenda ex, vel accusantium fuga et iure obcaecati voluptates quis sunt nihil. 
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime, dignissimos ratione cupiditate fuga possimus repellat ipsam. Earum quidem, omnis exercitationem enim ab, doloribus eveniet quasi magnam iste recusandae cupiditate voluptate!
+        </p>
+</body>
+</html>
