@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        Teste de formulário
+    </h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <p><label for="inome">Nome: </label>   <!-- Sempre tem que relacionar o label , o nome do cadastro com o formulario que ele corresponde, ajuda se clicar no nome, o mouse ja vai pa
+                                                caixa do formulario--> 
+            <input type="text" name="nome" id="inome" required minlength="5" maxlength="30" placeholder="Nome Completo" autocomplete="name"> </p> <!-- o required , vai aparecer um javascript 
+                                                                                                                        do navegador , dizendo que obrigatorio escrever aqui 
+                                                                                                                        o size, tamanho do formulario, placeholder, o que aparece clarinho 
+                                                                                                                      dentro da caixa do formulario -->
+        <p> 
+            <label for="imedia">Média</label>
+            <input type="number" name="media" id="imedia" min="0" max="10" placeholder="0 a 10" step="0.5" required> <!-- step usado para indicar de quanto em quanto a nota pode ser alterada  -->
+        <p>
+        <p> 
+            <label for="imes">Período Letivo</label>
+            <input type="month" name="mes" id="imes" required> <!-- step usado para indicar de quanto em quanto a nota pode ser alterada  -->
+        <p>
+        <p> 
+            <label for="idia">Dia da Prova</label>
+            <input type="date" name="dia" id="idia" required> <!-- step usado para indicar de quanto em quanto a nota pode ser alterada  -->
+        <p>
+
+        <p> 
+            <label for="ihora">Hora da Prova</label>
+            <input type="time" name="hora" id="ihora" required> <!-- step usado para indicar de quanto em quanto a nota pode ser alterada  -->
+        <p>
+            <input type="submit" value="Enviar"> 
+            <input type="reset" value="Limpar">  <!-- limpa os dados do formulario  -->
+        </p>
+    </form>
+
+   
+</body>
+</html>

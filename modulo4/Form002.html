@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        Teste de formulário
+    </h1>
+    <form action="cadastro.php" method="POST"  autocomplete="off"> <!-- o autocomplete = Não fica completando os campos -- já o action é pra onde vai 
+                                                                    mandar os dados - o method padrão é o GET - (quando os dados não são sensíveis), e aparece os dados na barra do navegador
+                                                                    já o method POST , não parece na barra do navegador-->
+        <p><label for="iusu">Nome: </label>   <!-- Sempre tem que relacionar o label , o nome do cadastro com o formulario que ele corresponde, ajuda se clicar no nome, o mouse ja vai pa
+                                                caixa do formulario--> 
+            <input type="text" name="usu" id="iusu" required minlength="5" maxlength="8" size="25" placeholder="Digite o nome aqui"> </p> <!-- o required , vai aparecer um javascript 
+                                                                                                                        do navegador , dizendo que obrigatorio escrever aqui 
+                                                                                                                        o size, tamanho do formulario, placeholder, o que aparece clarinho 
+                                                                                                                        dentro da caixa do formulario -->
+        <p><label for="isen">Senha:</label> 
+            <input type="password" name="Senha" id="isen" required minlength="5" size="25"></p> <!-- fica os ** pra não mostrar os dados da senha -->
+        <p>
+            <input type="submit" value="Enviar"> 
+            <input type="reset" value="Limpar">  <!-- limpa os dados do formulario  -->
+        </p>
+    </form>
+</body>
+</html>

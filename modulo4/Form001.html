@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        Meu primeiro Formulário
+    </h1>
+    <form action="cadastro.php" method="POST"  autocomplete="off"> <!-- o autocomplete = Não fica completando os campos -- já o action é pra onde vai 
+                                                                    mandar os dados - o method padrão é o GET - (quando os dados não são sensíveis), e aparece os dados na barra do navegador
+                                                                    já o method POST , não parece na barra do navegador-->
+        <p><label for="inome">Nome: </label>   <!-- Sempre tem que relacionar o label , o nome do cadastro com o formulario que ele corresponde, ajuda se clicar no nome, o mouse ja vai pa
+                                                caixa do formulario--> 
+            <input type="text" name="nome" id="inome"></p>
+        <p><label for="isobrenome">Sobrenome:</label> 
+            <input type="text" name="sobrenome" id="isobrenome"></p>
+        <p>
+            <input type="submit" value="Enviar"> </p>
+    </form>
+</body>
+</html>
