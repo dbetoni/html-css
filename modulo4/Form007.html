@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        Teste de formulário
+    </h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <p>
+            <label for="iest">Estado</label>
+            <select name="Estado" id="iest">
+                <optgroup label="Região Sudeste">  <!-- usar o optgroup para apresentar melhor os dados divididos por região  -->
+                    <option value="mg">Minas Gerais</option>
+                    <option value="rj">Rio de Janeiro</option>
+                    <option value="sp" selected>São Paulo</option>  <!-- já deixa selecionado uma opção -->
+                </optgroup>
+                <optgroup label="Região Nordeste">
+                    <option value="ma">Maranhão</option>
+                    <option value="pe">Pernambuco</option>
+                    <option value="rn">Rio Grande do Norte</option>
+                </optgroup>
+            </select>
+        </p>
+       
+
+        <p>
+            <label for="iprof">Profissão: </label>
+            <input type="text" name="prof" id="iprof" list="lstprof"> <!-- neste caso , da pra escolher uma opção da lista ou adicionar uma nova digitando  -->
+            <datalist id="lstprof">
+                <option value="ADM">Administrador</option>
+                <option value="CON">Contador</option>
+                <option value="DES">Desenvolvedor</option>
+                <option value="PRO">Professor</option>
+            </datalist>
+        </p>
+        <p>
+            <input type="submit" value="Enviar"> 
+            <input type="reset" value="Limpar">  <!-- limpa os dados do formulario  -->
+        </p>
+    </form>
+
+   
+</body>
+</html>
