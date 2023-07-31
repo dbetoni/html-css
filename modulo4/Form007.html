@@ -14,7 +14,7 @@
     <h1>
         Teste de formulário
     </h1>
-    <form action="cadastro.php" method="get" autocomplete="on">
+    <form action="cadastro.php" method="post" autocomplete="on">
         <p>
             <label for="iest">Estado</label>
             <select name="Estado" id="iest">
@@ -41,6 +41,11 @@
                 <option value="DES">Desenvolvedor</option>
                 <option value="PRO">Professor</option>
             </datalist>
+        </p>
+        <p>     
+            <label for="imsg">Mensagem:</label><br>
+            <textarea name="Mensagem" id="imsg" cols="30" rows="10"></textarea><!--delimita o tamanho do box, e é infinito a quantidade de texto que pode ser digitado  -->
+
         </p>
         <p>
             <input type="submit" value="Enviar"> 
