@@ -4,6 +4,7 @@
   font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
+  min-width: 100;
 }
 header{
     font-size: large;
@@ -12,11 +13,18 @@ header{
     text-shadow: 0.1em 0.1em 0.05em #333;
     text-align: center;
     padding: 10px;
-}
+    background-color:black;
+    position: fixed;
+    width: 100%;
+    
+  }
 
 body{
     background-color:black;
+    min-height: 100vh;
+      
 }
+
 
 .container {
     width: 100%;
@@ -24,7 +32,7 @@ body{
     background-color: #e3f9ff;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center; /* alinha os itens dentro do container, tudo que for dentro deste container vai estar centralizado*/
     
   } 
   
@@ -33,13 +41,7 @@ body{
     background-color: rgb(54, 52, 52);
     padding: 20px;   
     border-radius: 10px;
-  }
-  .textresultado{
-    margin: auto;
-    padding: 10px;
-    border-radius: 6px;
-    width: 90%;
-    
+ 
   }
 
   .calculadora form input{
@@ -67,9 +69,13 @@ body{
     text-align: right;
     flex: 1; /* deixa o tamanho grande ocupando a div*/
     font-size: 45px;
-    /*/ box-shadow: none; * caso queira deixar o display sem margens */ 
+    box-shadow: none;  /*caso queira deixar o display sem margens */ 
   }
 
   form input.equal{
     width: 145px;
+  }
+
+  form input.operator{
+    color:#33ffd8
   }
