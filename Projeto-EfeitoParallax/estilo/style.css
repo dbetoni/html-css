@@ -9,6 +9,11 @@ body{
     overflow-wrap: break-word;
     background-color: rgb(241, 171, 171);
     }
+h1,h2,h3,h4,h5,h6{
+    font-weight: 900;
+    color: black ;
+        
+}
 
 .wrapper{
     width: 100%;
@@ -20,10 +25,83 @@ main{
     background-color:aquamarine;
     }
 
-.container{
+.container{ /* atualiza o bloco do container, que esta dentro do main */
     width: 100%;
     max-width: 760px;
     margin: 0 auto;
     padding: 0 20px;
-    background-color: blue;
+    background-color: rgb(129, 129, 129);
     }
+
+section.module p{ /* atualiza o <p>, aqui está fazendo a formatação somente para este <p>  */
+    color: brown;
+    margin-bottom: 40px;
+    }
+
+section.module:last-child{ /* atualiza o o ultimo filho   */
+        color: green;
+        margin-bottom: 0;
+        }
+
+section.module h2{
+    margin-bottom: 40px;
+    font-size: 30px;
+
+}
+
+section.module.content{
+    padding: 40px 0;
+    background: #ece7d5;
+    
+}
+
+section.module.parallax{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 90vh !important;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* importante, este ponto que esta fazendo o efeito parallax  */
+    background-size: cover;
+    -webkit-background-size: cover; /* estas 3 linhas abaixo, é para funcionar em outros navegadores*/
+    -moz-background-size:cover;
+    -o-background-size:cover;
+}
+
+section.module.parallax:after{/* aqui tem um efeito gradiente de sombra*/
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 8;
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0, rgb(0,0,0,0) 40%, black 100%);
+    background: -moz-linear-gradient(to bottom, rgba(0,0,0,0) 0, rgb(0,0,0,0) 40%, black 100%);
+    background: -webkit-linear-gradient(to bottom, rgba(0,0,0,0) 0, rgb(0,0,0,0) 40%, black 100%);
+}
+
+section.module.parallax-1{
+    background-image: url("/Projeto-EfeitoParallax/imagens/montanhas.jpg");
+}
+
+
+section.module.parallax-2{
+    background-image: url("/Projeto-EfeitoParallax/imagens/arenamrv1.jpg");
+}
+
+section.module.parallax-3{
+    background-image: url("/Projeto-EfeitoParallax/imagens/cidade.jpg");
+}
+
+
+section.module.parallax h1{
+    color: white;
+    text-align: center;
+    font-size: 78px;
+    z-index: 50;
+    text-transform: uppercase;/* Cola o texto em caixa alta*/
+
+}
