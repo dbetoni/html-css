@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menu responsivo</title>
+    <title>Menu Responsivo</title>
     <link rel="stylesheet" href="estilo/style.css">
-    </head>
+</head>
+
 <body>
     <header>
         <nav class="nav-bar">
@@ -16,14 +17,15 @@
                 <ul>
                     <li class="nav-item"><a href="#" class="nav-link">Início</a></li>
                     <li class="nav-item"><a href="#" class="nav-link">Projetos</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Sobre</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link"> Sobre</a></li>
                 </ul>
             </div>
             <div class="login-button">
                 <button><a href="#">Entrar</a></button>
             </div>
+
             <div class="mobile-menu-icon">
-                <button><img class="icon" src="imagens/menu_white_36dp.svg"></button>
+                <button onclick="menuShow()"><img class="icon" src="imagens/menu_white_36dp.svg" alt=""></button>
             </div>
         </nav>
         <div class="mobile-menu">
@@ -38,5 +40,7 @@
             </div>
         </div>
     </header>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
